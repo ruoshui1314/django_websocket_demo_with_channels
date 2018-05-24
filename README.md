@@ -1,14 +1,17 @@
-#project is a websocket with django
-
+#project is a websocket with django channels
 #test
 
 python3 manage.py test chat.tests
 
 #running as below
 python3 -m venv <path/to/virtualenv>
+
 source <path/to/virtualenv>/bin/deactive
+
 python3 manage.py migrate
+
 python3 manage.py makemigrations
+
 python3 manage.py runserver 0.0.0.0:9000
 
 #uwsgi
