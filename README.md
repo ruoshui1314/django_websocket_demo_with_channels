@@ -1,6 +1,7 @@
 #project is a websocket with django channels
 -------------------
 
+``` bash
 #test
 -------------------
 
@@ -26,3 +27,5 @@ daphne django_websocket.asgi:application --port 9001 & uwsgi --http :9000 --modu
 #add nginx with uwsgi
 -------------------
 uwsgi --socket ./../web/compass.sock --wsgi-file ./django_websocket/wsgi.py --chmod-socket=666 --master --processes 2 --threads 2 & daphne django_websocket.asgi:application --port 8001
+
+```
